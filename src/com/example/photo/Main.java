@@ -31,19 +31,7 @@ public class Main  extends Activity {
     private ImageView imgPreview;
     private Button btnCapturePicture;
     
-    public class Main  extends Activity {
-	
-	// Activity request codes
-    private static final int CAMERA_CAPTURE_IMAGE_REQUEST_CODE = 100;
-    public static final int MEDIA_TYPE_IMAGE = 1;
     
-    // directory name to store captured images and videos
-    private static final String IMAGE_DIRECTORY_NAME = "Hello Camera";
- 
-    private Uri fileUri; // file url to store image/video
-    private ImageView imgPreview;
-    private Button btnCapturePicture;
-	
 	
 	protected void onCreate(Bundle test) {
 		super.onCreate(test);
