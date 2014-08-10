@@ -31,27 +31,7 @@ public class Main  extends Activity {
     private ImageView imgPreview;
     private Button btnCapturePicture;
 	
-	
-	protected void onCreate(Bundle test) {
-		super.onCreate(test);
-		setContentView(R.layout.photolayout);
-		imgPreview = (ImageView) findViewById(R.id.imgPreview);
-        btnCapturePicture = (Button) findViewById(R.id.btnCapturePicture);
-        
- 
-        /**
-         * Capture image button click event
-         * */
-       btnCapturePicture.setOnClickListener( new View.OnClickListener() {
-		
-		@Override
-		public void onClick(View v) {
-			// TODO Auto-generated method stub
-			//capture picture
-			captureImage();
-			
-		}
-	});
+
        // Checking camera availability
        if (!isDeviceSupportCamera()) {
            Toast.makeText(getApplicationContext(),
